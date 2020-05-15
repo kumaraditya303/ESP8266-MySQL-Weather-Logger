@@ -12,7 +12,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "/home/kumaraditya/Documents/PlatformIO/Projects/ESP8266_OTA_UPLOAD/.pio/build/nodemcuv2/firmware.elf",
+            "executable": "/home/kumaraditya/Documents/PlatformIO/Projects/ESP8266-MySQL-Weather-Logger/.pio/build/nodemcuv2/firmware.elf",
             "toolchainBinDir": "/home/kumaraditya/.platformio/packages/toolchain-xtensa/bin",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -24,7 +24,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "/home/kumaraditya/Documents/PlatformIO/Projects/ESP8266_OTA_UPLOAD/.pio/build/nodemcuv2/firmware.elf",
+            "executable": "/home/kumaraditya/Documents/PlatformIO/Projects/ESP8266-MySQL-Weather-Logger/.pio/build/nodemcuv2/firmware.elf",
             "toolchainBinDir": "/home/kumaraditya/.platformio/packages/toolchain-xtensa/bin",
             "internalConsoleOptions": "openOnSessionStart"
         }
