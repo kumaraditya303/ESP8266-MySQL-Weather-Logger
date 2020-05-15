@@ -23,6 +23,7 @@
 #
 # Template #1: General project. Test it using existing `platformio.ini`.
 
+
 language: python
 python:
     - "3.8"
@@ -44,7 +45,7 @@ deploy:
         - LICENSE
     skip_cleanup: true
     on:
-        tags: true
+        branch: master
 
 #
 # Template #2: The project is intended to be used as a library with examples.
