@@ -36,13 +36,13 @@ install:
     - platformio update
 script:
     - platformio run
+before_deploy:
+    - tar -czvf ESP8266-MYSQL-WEATHER-LOGGER.tar.gz src/ LICENSE README.md
 deploy:
     provider: releases
     api_key: $GITHUB_OAUTH_TOKEN 
     file: 
-        - src/*
-        - README.md
-        - LICENSE
+        - ESP8266-MYSQL-WEATHER-LOGGER.tar.gz
     skip_cleanup: true
     on:
         branch: master
