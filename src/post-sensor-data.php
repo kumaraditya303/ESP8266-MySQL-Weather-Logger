@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$dbname = "********";       // replacewith dbname
-$password = "********";     // replacewith password
-$username = "********";     // replacewith username
+$dbname = "********";       // replace with dbname
+$password = "********";     // replace with password
+$username = "********";     // replace with username
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $temperature = floatval($_POST["temperature"]);

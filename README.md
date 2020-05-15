@@ -17,9 +17,9 @@
 ## Configuring project and credentials
 -    Copy the database credentials and paste it in the php files
 ```php
-$dbname = "********";       // replacewith dbname
-$password = "********";     // replacewith password
-$username = "********";     // replacewith username
+$dbname = "********";       // replace with dbname
+$password = "********";     // replace with password
+$username = "********";     // replace with username
 ```
 -    Create the table with the included schema
 ```sql
@@ -42,4 +42,4 @@ const String server = "http://YOUR_HOST/post-sensor-data.php"; // Replace url
 -    Upload the project with Arduino IDE  
 ### **You can also open this project in Visual Studio Code with PlatformIO and upload it! Download source code from [here](https://github.com/rahuladitya303/ESP8266-MySQL-Weather-Logger/archive/master.zip).**
 
-## Project made and maintained by *Kumar Aditya* Dont't forget to start repository
+## Project made and maintained by *Kumar Aditya* Dont't forget to star repository!

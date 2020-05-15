@@ -12,9 +12,9 @@
     <h1 class="bg-dark display-4 text-light pl-4 text-center">ESP8266 Weather Data</h1>
     <?php
     $servername = "localhost";
-    $dbname = "********";       // replacewith dbname
-    $password = "********";     // replacewith password
-    $username = "********";     // replacewith username
+    $dbname = "********";       // replace with dbname
+    $password = "********";     // replace with password
+    $username = "********";     // replace with username
     $connection = new mysqli($servername, $username, $password, $dbname);
     if ($connection->connect_error)
         die("Connection failed: " . $conn->connect_error);
