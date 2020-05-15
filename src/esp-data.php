@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <h1 class="bg-dark display-4 text-light pl-4 text-center">ESP8266 Weather Data</h1>
     <?php
     $servername = "localhost";
     $dbname = "id13473327_data";
@@ -18,7 +19,7 @@
     if ($connection->connect_error)
         die("Connection failed: " . $conn->connect_error);
     $sql = "SELECT * FROM sensordata;";
-    echo '<table cellspacing="5" cellpadding="5" class="table table-bordered">
+    echo '<table cellspacing="5" cellpadding="5" class="table table-dark table-bordered">
     <tr> 
       <td colspan="1">ID</td> 
       <td colspan="1">Temperature</td> 
@@ -30,7 +31,7 @@
             $row_id = $row["id"];
             $row_temperature = $row["temperature"];
             $row_humidity = $row["humidity"];
-            $row_reading_time = $row["reading_time"];
+            $row_reading_time = $row["datetime"];
             echo '<tr> 
         <td>' . $row_id . '</td> 
         <td>' . $row_temperature . '</td> 
@@ -40,3 +41,8 @@
         }
     }
     ?>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
