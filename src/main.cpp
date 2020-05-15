@@ -24,15 +24,15 @@
  * replace with your credentials
 */
 
-const char *ssid = "AndroidAPB9CF";  // Replace ssid
-const char *password = "rahul12345"; // Replace password
+const char *ssid = "************";  // Replace ssid
+const char *password = "*************"; // Replace password
 
 /**
  * setting up server URL
  * replace with your server url
 */
 
-const String server = "http://esp8266weather.000webhostapp.com/post-sensor-data.php"; // Replace url
+const String server = "http://YOUR_HOST.000webhostapp.com/post-sensor-data.php"; // Replace url
 
 /**
  * create class of BME280 sensor
@@ -58,8 +58,8 @@ void ICACHE_RAM_ATTR postSensorData(String server)
   Serial.println("Setting up headers!");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
   Serial.println("Posting sensor data!");
-  String sensorData = "temperature=" + String(10.0)  //bme.readTemperature())
-                      + "&humidity=" + String(10.0); //bme.readHumidity());
+  String sensorData = "temperature=" + String(bme.readTemperature())  //bme.readTemperature())
+                      + "&humidity=" + String(bme.readHumidity()); //bme.readHumidity());
   // post sensor data
   int httpResponseCode = http.POST(sensorData);
   Serial.println(http.getString());
@@ -83,13 +83,13 @@ void setup()
 {
   // Start serial port
   Serial.begin(115200);
-  /*bool status = bme.begin(0x76);
+  bool status = bme.begin(0x76);
   if (!status)
   {
     Serial.println("Could not find a valid BME280 sensor, check wiring!");
     while (1)
       ;
-  }*/
+  }
   // Connect to Wi-Fi
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
