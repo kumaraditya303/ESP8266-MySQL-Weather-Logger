@@ -40,7 +40,7 @@ deploy:
     api_key: $GITHUB_OAUTH_TOKEN 
     skip_cleanup: true
     on:
-        tags:true
+        branch: master
 
 #
 # Template #2: The project is intended to be used as a library with examples.
