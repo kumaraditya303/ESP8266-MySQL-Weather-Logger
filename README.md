@@ -69,6 +69,6 @@ ___
 
 4 directories, 11 files
 ```
-## Project made and maintained by *Kumar Aditya* Dont't forget to star repository!
+## Project made and maintained by *Kumar Aditya* Don't forget to star repository!
 
 ___
