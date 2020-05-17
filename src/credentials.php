@@ -9,6 +9,6 @@
  ********************************************************************************************************************/
 
 $servername = "localhost";
-$dbname = "id13473327_data";
-$username = "id13473327_esp8266";
-$password = "dLT6D&8qo0UBRvwe";
+$dbname = "********";       // replace with dbname
+$password = "********";     // replace with password
+$username = "********";     // replace with username
