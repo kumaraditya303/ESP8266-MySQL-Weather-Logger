@@ -45,7 +45,7 @@
 
             var chart = new CanvasJS.Chart("charttemphumi", {
                 animationEnabled: true,
-                theme: "light2",
+                theme: "dark2",
                 zoomEnabled: true,
                 title: {
                     text: "Temperature & Humidity"
