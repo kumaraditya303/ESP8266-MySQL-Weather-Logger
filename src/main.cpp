@@ -25,15 +25,15 @@
  * replace with your credentials
 */
 
-const char *ssid = "************";  // Replace ssid
-const char *password = "*************"; // Replace password
-
+const char *ssid = "********";     // Replace ssid
+const char *password = "********"; // Replace password
+const long delayTime = 300000;
 /**
  * setting up server URL
  * replace with your server url
 */
 
-const String server = "http://YOUR_HOST.000webhostapp.com/post-sensor-data.php"; // Replace url
+const String server = "http://********.000webhostapp.com/post-sensor-data.php"; // Replace url
 
 /**
  * create class of BME280 sensor
@@ -59,8 +59,7 @@ void ICACHE_RAM_ATTR postSensorData(String server)
   Serial.println("Setting up headers!");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
   Serial.println("Posting sensor data!");
-  String sensorData = "temperature=" + String(bme.readTemperature())  //bme.readTemperature())
-                      + "&humidity=" + String(bme.readHumidity()); //bme.readHumidity());
+  String sensorData = "temperature=" + String(bme.readTemperature()) + "&humidity=" + String(bme.readHumidity());
   // post sensor data
   int httpResponseCode = http.POST(sensorData);
   Serial.println(http.getString());
@@ -109,5 +108,5 @@ void loop()
 {
   // Call function
   postSensorData(server);
-  delay(30000);
+  delay(delayTime);
 }

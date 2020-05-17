@@ -16,7 +16,7 @@
 ___
 
 ## Configuring project and credentials
--    Copy the database credentials and paste it in the php files
+-    Copy the database credentials and paste it in credentials.php file
 ```php
 $dbname = "********";       // replace with dbname
 $password = "********";     // replace with password
@@ -36,7 +36,7 @@ CREATE TABLE `sensordata` (
 ```cpp
 const char *ssid = "**************";// Replace ssid
 const char *password = "**************"; // Replace password
-const String server = "http://YOUR_HOST/post-sensor-data.php"; // Replace url
+const String server = "http://*********.000webhostapp.com/post-sensor-data.php"; // Replace url
 ```
 
 ___
@@ -51,6 +51,7 @@ ___
 # Project Structure
 ```html
 .
+├── _config.yml
 ├── include
 │   └── README
 ├── lib
@@ -59,6 +60,7 @@ ___
 ├── platformio.ini
 ├── README.md
 ├── src
+│   ├── credentials.php
 │   ├── esp-chart.php
 │   ├── esp-data.php
 │   ├── main.cpp
@@ -67,8 +69,9 @@ ___
 └── test
     └── README
 
-4 directories, 11 files
+4 directories, 13 files
+
 ```
-## Project made and maintained by *Kumar Aditya* Don't forget to star repository!
+## Project made and maintained by *Kumar Aditya* 
 
 ___

@@ -8,6 +8,7 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +19,7 @@
 <body>
     <h1 class="bg-dark display-4 text-light pl-4 text-center">ESP8266 Weather Data</h1>
     <?php
-    $servername = "localhost";
-    $dbname = "********";       // replace with dbname
-    $password = "********";     // replace with password
-    $username = "********";     // replace with username
+    include("credentials.php");
     $connection = new mysqli($servername, $username, $password, $dbname);
     if ($connection->connect_error)
         die("Connection failed: " . $conn->connect_error);

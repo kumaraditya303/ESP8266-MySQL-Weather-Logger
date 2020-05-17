@@ -1,17 +1,14 @@
 <?php
+
 /*******************************************************************************************************************
  * @file post-sensor-data.php
  * @author Kumar Aditya
  * @version 1.0
  * @date 15-05-2020
  * @rahuladitya303
-********************************************************************************************************************/
+ ********************************************************************************************************************/
 
-$servername = "localhost";
-$dbname = "********";       // replace with dbname
-$password = "********";     // replace with password
-$username = "********";     // replace with username
-
+include("credentials.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $temperature = floatval($_POST["temperature"]);
     $humidity = floatval($_POST["humidity"]);
@@ -22,5 +19,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($connection->query($sql) === True) echo "Data recorded successfully!";
     else die("Error occured" . $connection->error);
 } else die("Only POST request allowed!");
-
-?>
