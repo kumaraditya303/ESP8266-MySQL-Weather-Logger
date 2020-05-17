@@ -2,6 +2,9 @@
 
 **Monitors the temperature and humidity with BME280 Sensor and posts the sensor data to the database hosted with webserver. We can see the graphs of the sensor data along with sensor data in tabular format.**
 
+# Screenshot
+![Screenshot](https://github.com/rahuladitya303/ESP8266-MySQL-Weather-Logger/raw/master/include/screenshot.png)
+
 # Getting Started
 ## Creating account and database
 -    Create your account on your preferred web hosting service
